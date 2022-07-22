@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+DJANGO_ALLOW_ASYNC_UNSAFE=True
 
 # Application definition
 
