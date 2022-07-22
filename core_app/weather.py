@@ -53,10 +53,7 @@ async def get_weather(user_id):
                 }
 
                 await create_weather(data)
-                
-                print(f"\n{city_id} sleep in 2 sec...")
                 await asyncio.sleep(2)
-                print(f"{city_id} awake!")
             
             except Exception as e:
                 print(e)
