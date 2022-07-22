@@ -1,6 +1,5 @@
 
 from core_app.models import Weather
-from datetime import datetime
 import aiohttp
 import asyncio
 from asgiref.sync import sync_to_async
