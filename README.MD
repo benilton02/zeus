@@ -7,6 +7,12 @@ This API was design and built to collect data from an [Open Weather API](https:/
 - Docker Engine. [Info](https://docs.docker.com/engine/install/)
 - Docker Compose. [Info](https://docs.docker.com/compose/install/)
 
+### Environment variables
+Go to the .env file and set the following variable:
+```sh
+SECRET_KEY_WEATHER=<SECRET_KEY_OPEN_WEATHER_HERE>
+```
+
 ### How to Run in Docker
 On Linux, Copy and paste the command bellow:
 ```sh
