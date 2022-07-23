@@ -15,13 +15,14 @@ secret_key_weather = config('SECRET_KEY_WEATHER')
 
 async def get_weather(user_id):
     results = []
+    i = 1
    
     async with aiohttp.ClientSession() as session:
     
         for city_id in city_ids:
 
             try: 
-                response = await session.get(url.format(city_id, secret_key_weather))
+                response = await session.get(url.format(city_id, secret_key_weather), ssl=False)
                 respose_json = await response.json()
                 weather = respose_json['main']
 
@@ -34,10 +35,11 @@ async def get_weather(user_id):
                 }
 
                 print("\n", data)
-                print("\nsleep in 1.20 sec..\n")
-               
+                print("\nsleep in 1.80 sec..\n")
+                print(i,"\n")
                 await create_weather(data)
-                await asyncio.sleep(1.2)
+                await asyncio.sleep(1.8)
+                i+=1
                 
                 print("Awake!")
             
