@@ -61,6 +61,5 @@ def report_weather(request, user_id):
     return JsonResponse(data=data, status=status)
 
 
-async def get_report(user_id):
-    ...
+
 

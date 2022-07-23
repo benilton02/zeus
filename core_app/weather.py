@@ -34,10 +34,10 @@ async def get_weather(user_id):
                 }
 
                 print("\n", data)
-                print("\nsleep in 02 sec..\n")
+                print("\nsleep in 1.20 sec..\n")
                
                 await create_weather(data)
-                await asyncio.sleep(2)
+                await asyncio.sleep(1.2)
                 
                 print("Awake!")
             
